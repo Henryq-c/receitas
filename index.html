@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <img src="img/banner.png" alt="Banner">
+    </header>
+
+    <section class="recipe-title">
+        <h1>Nome da Obra</h1>
+    </section>
+
+    <section class="recipes-container">
+        <div class="recipe-card" onclick="document.getElementById('recipe1').style.display='block'">
+            <img src="img/comida.png" alt="Comida 1" class="recipe-image">
+            <div class="recipe-description">
+                <h3>Receita 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Ver Receita Completa</button>
+            </div>
+        </div>
+
+        <div class="recipe-card" onclick="document.getElementById('recipe2').style.display='block'">
+            <img src="img/comida.png" alt="Comida 2" class="recipe-image">
+            <div class="recipe-description">
+                <h3>Receita 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Ver Receita Completa</button>
+            </div>
+        </div>
+
+        <div class="recipe-card" onclick="document.getElementById('recipe3').style.display='block'">
+            <img src="img/comida.png" alt="Comida 3" class="recipe-image">
+            <div class="recipe-description">
+                <h3>Receita 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button>Ver Receita Completa</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up para Receita 1 -->
+    <div id="recipe1" class="recipe-popup">
+        <div class="popup-content">
+            <h3>Receita 1</h3>
+            <p>Detalhes da receita 1 aqui...</p>
+            <ul>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>                
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+                <li>400 gr de massa de lasanha</li>
+            
+            </ul>
+            <button onclick="document.getElementById('recipe1').style.display='none'">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Pop-up para Receita 2 -->
+    <div id="recipe2" class="recipe-popup">
+        <div class="popup-content">
+            <h3>Receita 2</h3>
+            <p>Detalhes da receita 2 aqui...</p>
+            <button onclick="document.getElementById('recipe2').style.display='none'">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Pop-up para Receita 3 -->
+    <div id="recipe3" class="recipe-popup">
+        <div class="popup-content">
+            <h3>Receita 3</h3>
+            <p>Detalhes da receita 3 aqui...</p>
+            <button onclick="document.getElementById('recipe3').style.display='none'">Fechar</button>
+        </div>
+    </div>
+
+   <!-- Rodapé -->
+<footer>
+    <div class="footer-content">
+        <!-- Logo -->
+        <div class="footer-logo">
+            <img src="img/logonerdchef.png" alt="Logo">
+        </div>
+        <!-- Colunas de links -->
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Início</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Receitas</a></li>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#">Filmes & Séries</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <ul>
+                    <li><a href="#">Informações da Empresa</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Telefones</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Redes Sociais e Botão de Contato -->
+        <div class="footer-social-contact">
+            <div class="footer-social">
+                <a href="#"><img src="img/faceboockicon.png" alt="Facebook"></a>
+                <a href="#"><img src="img/instaicon.png" alt="Instagram"></a>
+                <a href="#"><img src="img/twittericon.png" alt="Twitter"></a>
+            </div>
+            <!-- Botão de Contato -->
+            <div class="contact-button">
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright">
+        &copy; 2024 Copyright - NerdChef.
+    </div>
+</footer>
+</body>
+</html>
